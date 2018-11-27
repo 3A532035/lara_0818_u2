@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('home','HomeController@index');
+
+Rooute::get('hello/{name?}',['as'=>'hello.index'
+    ,'uses'=>'HelloController@index']);
